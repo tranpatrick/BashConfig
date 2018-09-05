@@ -122,13 +122,3 @@ PROMPT_COMMAND='history -a'
 
 #Displaying actual git branch + fancy colors
 export PS1='\[\033[0;36m\]\h \w\[\033[0;32m\]$(__git_ps1)\n\[\033[0;32m\]└─\[\033[0m\033[0;32m\] \$\[\033[0m\] '
-
-#Reset Intellij licence
-echo "removing evaluation key"
-rm ~/.IntelliJIdea*/config/eval/idea*.evaluation.key
-
-echo "resetting evalsprt in options.xml"
-sed -i '/evlsprt/d' ~/.IntelliJIdea*/config/options/options.xml
-
-echo "removing user jetbrain preference"
-rm -rf ~/.java/.userPrefs/jetbrains
